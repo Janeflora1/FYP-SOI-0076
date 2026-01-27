@@ -1,13 +1,14 @@
 [server]
-# Maximum message size in MB (81920 MB = 80GB)
-maxMessageSize = 81920
+# Maximum message size in MB (20480 MB = 20GB)
+maxMessageSize = 20480
 
 # Enable file server
 enableXsrfProtection = true
 
+[client]
+# Maximum upload size in MB (20480 MB = 20GB)
+maxUploadSize = 20480
+
 [theme]
 base = "dark"
 primaryColor = "#1f77b4"
-
-[client]
-# Streamlit will use browser's local storage for uploads

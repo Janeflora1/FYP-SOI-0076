@@ -305,7 +305,7 @@ def tab_evidence_sorter():
     with col2:
         st.subheader("Upload Evidence")
         uploaded_files = st.file_uploader(
-            "Select evidence files or provide a directory path (Max 80GB per file)",
+            "Select evidence files or provide a directory path (Max 20GB per file)",
             accept_multiple_files=True,
             help="Upload files: images, logs, archives, executables, databases, disk images (E01, E02, etc)"
         )
@@ -567,7 +567,7 @@ def tab_smart_log_scanner():
     with col2:
         st.subheader("Upload Log File")
         log_file = st.file_uploader(
-            "Upload log file (.txt, .log, .csv, .json) - Max 80GB",
+            "Upload log file (.txt, .log, .csv, .json) - Max 20GB",
             type=['txt', 'log', 'csv', 'json']
         )
     
@@ -688,7 +688,7 @@ def tab_image_analyzer():
     with col2:
         st.subheader("Upload Image")
         image_file = st.file_uploader(
-            "Upload image file (Max 80GB)",
+            "Upload image file (Max 20GB)",
             type=['jpg', 'jpeg', 'png', 'bmp', 'gif', 'tiff', 'webp']
         )
     
@@ -811,7 +811,7 @@ def tab_regex_extractor():
     
     if text_input == "Upload File":
         uploaded_file = st.file_uploader(
-            "Upload text file (Max 80GB)",
+            "Upload text file (Max 20GB)",
             type=['txt', 'log', 'csv', 'json']
         )
         if uploaded_file:
@@ -949,7 +949,7 @@ def tab_timeline_builder():
     with col1:
         st.write("### File System Events")
         fs_file = st.file_uploader(
-            "Upload file system timeline (CSV, TXT, JSON) - Max 80GB",
+            "Upload file system timeline (CSV, TXT, JSON) - Max 20GB",
             type=['csv', 'txt', 'json'],
             key="fs_timeline"
         )
@@ -957,7 +957,7 @@ def tab_timeline_builder():
     with col2:
         st.write("### Windows Event Log")
         event_file = st.file_uploader(
-            "Upload Windows Event Log (CSV, TXT, EVTX) - Max 80GB",
+            "Upload Windows Event Log (CSV, TXT, EVTX) - Max 20GB",
             type=['csv', 'txt', 'evtx'],
             key="event_log"
         )
@@ -965,7 +965,7 @@ def tab_timeline_builder():
     with col3:
         st.write("### Network Log")
         network_file = st.file_uploader(
-            "Upload network log (CSV, TXT, JSON) - Max 80GB",
+            "Upload network log (CSV, TXT, JSON) - Max 20GB",
             type=['csv', 'txt', 'json'],
             key="network_log"
         )
@@ -1112,7 +1112,7 @@ def tab_network_anomaly():
     with col2:
         st.subheader("Upload PCAP File")
         pcap_file = st.file_uploader(
-            "Upload PCAP or PCAPNG file (Max 80GB)",
+            "Upload PCAP or PCAPNG file (Max 20GB)",
             type=['pcap', 'pcapng', 'cap']
         )
     
@@ -1239,7 +1239,7 @@ def tab_ml_classifier():
     with col2:
         st.subheader("Upload Log Data")
         log_file = st.file_uploader(
-            "Upload log file for classification (Max 80GB)",
+            "Upload log file for classification (Max 20GB)",
             type=['txt', 'log', 'csv', 'json']
         )
     
@@ -1355,7 +1355,7 @@ def tab_memory_analyzer():
     with col2:
         st.subheader("Upload Memory Dump")
         memory_file = st.file_uploader(
-            "Upload memory dump file (Max 80GB)",
+            "Upload memory dump file (Max 20GB)",
             type=['dmp', 'mem', 'raw', 'dump', 'bin']
         )
     
