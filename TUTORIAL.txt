@@ -1,0 +1,170 @@
+================================================================================
+                    AI FORENSICS SUITE - QUICK TUTORIAL
+================================================================================
+
+OVERVIEW
+--------
+This is an AI-Powered Digital Forensics Analysis Suite that combines multiple
+forensics tools with machine learning algorithms for evidence analysis.
+
+GETTING STARTED
+---------------
+
+1. INSTALL REQUIREMENTS
+   Run: pip install -r requirements.txt
+   
+   This installs all necessary dependencies:
+   - streamlit (web interface)
+   - scikit-learn (ML algorithms)
+   - pandas (data handling)
+   - opencv-python (image analysis)
+   - scapy (network analysis)
+   - pillow (image processing)
+   - matplotlib, seaborn, plotly (visualization)
+
+2. START THE APPLICATION
+   Run: streamlit run app.py
+   
+   This launches the web interface at http://localhost:8501
+
+3. NAVIGATE THE APPLICATION
+   The left sidebar has menu items for each tool:
+   - Home: Overview and guides
+   - Evidence Sorter: Categorize forensic files
+   - Smart Log Scanner: Detect anomalies in logs
+   - Image Analyzer: Analyze images for evidence
+   - Regex Extractor: Extract patterns (IPs, emails, hashes)
+   - Timeline Builder: Create forensic timelines
+   - Network Anomaly: Detect network threats
+   - ML Classifier: Classify security events
+   - Memory Analyzer: Analyze memory dumps
+
+USING EACH TOOL
+---------------
+
+EVIDENCE SORTER
+  • Select a folder with evidence files
+  • Click "Analyze Evidence" 
+  • View categorized files by type
+  • See high-priority suspicious files
+  • Download results as JSON/CSV
+
+SMART LOG SCANNER
+  • Upload a log file (txt, csv, or json)
+  • System uses ML (Isolation Forest) to detect anomalies
+  • View normal vs suspicious entries
+  • See anomaly scores and patterns
+
+IMAGE ANALYZER
+  • Upload image files (jpg, png, gif, etc)
+  • Analyzes EXIF metadata
+  • Detects text in images (OCR)
+  • Extracts color information
+  • Calculates file hash
+
+REGEX EXTRACTOR
+  • Paste or upload text data
+  • Extracts: IPs, emails, URLs, domains, hashes, credit cards
+  • View evidence by type
+  • Download extracted data
+
+TIMELINE BUILDER
+  • Upload file system timeline
+  • Uploads Windows Event Logs
+  • Generates chronological timeline
+  • Creates forensic report
+  • Exports to CSV/JSON
+
+NETWORK ANOMALY DETECTOR
+  • Upload PCAP file (packet capture)
+  • Detects suspicious connections
+  • Identifies unusual traffic patterns
+  • Shows connection statistics
+
+ML CLASSIFIER
+  • Analyzes security logs
+  • Classifies events as:
+    - Normal operations
+    - Brute force attempts
+    - Privilege escalation
+    - Malware execution
+    - Data exfiltration
+    - Lateral movement
+    - Reconnaissance
+
+MEMORY ANALYZER
+  • Analyzes memory dumps
+  • Detects injected code
+  • Finds suspicious processes
+  • Identifies malware signatures
+
+KEY FEATURES
+-----------
+✓ AI-powered anomaly detection using Isolation Forest
+✓ ML-based log classification (Random Forest + Gradient Boosting)
+✓ Pattern-based evidence extraction with regex
+✓ Image forensics with metadata analysis
+✓ Network traffic anomaly detection
+✓ Automated timeline correlation
+✓ Export results in multiple formats (JSON, CSV, PDF)
+✓ Real-time threat analysis
+✓ Comprehensive reporting
+
+ALGORITHMS USED
+---------------
+1. Isolation Forest - Anomaly detection in logs
+2. Random Forest - Log classification
+3. Gradient Boosting - Event prediction
+4. TF-IDF Vectorization - Text feature extraction
+5. StandardScaler - Feature normalization
+
+OUTPUT FORMATS
+--------------
+All tools can export results in:
+- JSON (structured data)
+- CSV (spreadsheet format)
+- PDF (formatted reports)
+- TXT (plain text summaries)
+
+TROUBLESHOOTING
+---------------
+Q: App won't start
+A: Make sure all requirements are installed: pip install -r requirements.txt
+
+Q: File upload not working
+A: Check file format - only specific formats are supported per tool
+
+Q: Slow processing
+A: Large files may take time. Progress indicators show status.
+
+Q: No results
+A: Try with sample data first to verify the tool works
+
+KEYBOARD SHORTCUTS
+------------------
+In Streamlit interface:
+- 'R' to rerun the app
+- 'C' to clear cache
+- 'K' to toggle menu
+
+GETTING HELP
+-----------
+Each tool has an info box with:
+- Purpose and description
+- Supported file formats
+- Expected output
+- Example use cases
+
+NEXT STEPS
+---------
+1. Run: streamlit run app.py
+2. Explore the Home tab for overview
+3. Try each tool with sample data
+4. Upload your forensic evidence
+5. Analyze results and export reports
+6. Use timeline builder to correlate events
+
+================================================================================
+For best results, use this suite as part of a comprehensive digital 
+forensics investigation workflow.
+================================================================================
